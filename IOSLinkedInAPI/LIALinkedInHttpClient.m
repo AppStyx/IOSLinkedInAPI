@@ -122,6 +122,8 @@
 
   UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:authorizationViewController];
 
+  nc.view.backgroundColor = [UIColor whiteColor];
+
   if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
     nc.modalPresentationStyle = UIModalPresentationFormSheet;
   }
